@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:backgroundTint="#009688">
 
     <TextView
         android:id="@+id/lastName"
@@ -86,7 +87,9 @@
         android:text="See next user"
         app:layout_constraintBottom_toTopOf="@+id/AddThisUserToCollection"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:backgroundTint="#2196F3"
+        />
 
     <Button
         android:id="@+id/AddThisUserToCollection"
@@ -97,7 +100,9 @@
         android:text="Add this user to collection"
         app:layout_constraintBottom_toTopOf="@+id/ViewCollection"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:backgroundTint="#2196F3"
+        />
 
     <Button
         android:id="@+id/ViewCollection"
@@ -108,7 +113,9 @@
         android:text="View Collection"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:backgroundTint="#2196F3"
+        />
 
     <ImageView
         android:id="@+id/profilePicture"

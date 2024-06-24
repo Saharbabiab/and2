@@ -1,15 +1,13 @@
-<shape
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
     <gradient
         android:type="radial"
         android:centerX="50%"
         android:centerY="50%"
-        android:startColor="#FFFF00"
-        android:centerColor="#0032404E"
-        android:endColor="#EE8282"
-        android:gradientRadius="100%"
-        />
+        android:startColor="#2196F3"
+    android:endColor="#FF5722"
+    android:gradientRadius="100%"/>
 
 </shape>
