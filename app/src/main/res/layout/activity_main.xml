@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="last name"
+        app:layout_constraintBottom_toTopOf="@+id/Age"
+        app:layout_constraintStart_toEndOf="@+id/profilePicture"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="36dp"
+        android:text="Age: "
+        app:layout_constraintBottom_toTopOf="@+id/Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.023"
+        app:layout_constraintStart_toEndOf="@+id/profilePicture"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="first Name"
+        app:layout_constraintBottom_toTopOf="@+id/lastName"
+        app:layout_constraintStart_toEndOf="@+id/profilePicture"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="Email:  "
+        app:layout_constraintBottom_toTopOf="@+id/City"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="28dp"
+        android:text="City:  "
+        app:layout_constraintBottom_toTopOf="@+id/Country"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="144dp"
+        android:text="Country:  "
+        app:layout_constraintBottom_toTopOf="@+id/nextUserButton"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/nextUserButton"
+        android:layout_width="140sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="See next user"
+        app:layout_constraintBottom_toTopOf="@+id/AddThisUserToCollection"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/AddThisUserToCollection"
+        android:layout_width="220sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
+        android:text="Add this user to collection"
+        app:layout_constraintBottom_toTopOf="@+id/ViewCollection"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/ViewCollection"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="76dp"
+        android:text="View Collection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="156dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:contentDescription="Profile Picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:src="@drawable/placeholderpic"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
